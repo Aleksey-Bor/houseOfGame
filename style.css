@@ -1,15 +1,21 @@
+/* Общие стили */
 * {
   box-sizing: border-box;
 }
 
 :root {
   font-size: 10px;
-  --main-deep_blue: #110A1D;
-  --main-blue: #478BF9;
+  --main-deep_blue: #110a1d;
+  --main-blue: #478bf9;
   --clean_white: #ffffff;
-  --add-purrple: #9DADF2;
-  --add-fresh_mint: #7DDACF;
-  --linear: : linear-gradient(to bottom, #478BF9, #B3C6E6);
+  --add-purrple: #9dadf2;
+  --add-fresh_mint: #7ddacf;
+  --linear: linear-gradient(to bottom, #478bf9, #b3c6e6);
+}
+
+@font-face {
+  font-family: Lexend-Regular;
+  src: url(./assets/fonts/Lexend/Lexend-Regular.ttf);
 }
 
 body {
@@ -21,29 +27,55 @@ a {
   text-decoration: none;
 }
 
-header {
+/* Стили для header */
+.header {
   max-width: 1640px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header__container {
-  max-width: 1066px;
   display: flex;
   justify-content: space-between;
+  margin: 16px auto 0px;
+  border: 4px solid var(--main-blue);
+  border-radius: 64px;
+  padding: 24px 48px;
+  font-family: Lexend-Regular;
+  font-size: 1.6rem;
+  line-height: 20px;
+}
+
+.header__logo,
+.header__buttons {
+  width: 287px;
+}
+
+.header__nav,
+.header__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav {
   width: 588px;
+  padding: 8px;
 }
 
 .header__nav-link {
-  width: 287px;
-  font-size: 1.6rem;
-  color: var(--clean_white)
+  color: var(--clean_white);
 }
 
-.header__buttons {
-
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--add-purrple);
+  border-radius: 24px;
+  background-color: var(--main-deep_blue);
+  padding: 14px;
+  text-transform: uppercase;
+  color: var(--clean_white);
 }
+
+.header__button-language {
+  margin-left: 8px;
+}
+
+/* Стили для main.home-page */
