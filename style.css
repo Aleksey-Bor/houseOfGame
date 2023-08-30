@@ -11,6 +11,7 @@
   --add-purrple: #9dadf2;
   --add-fresh_mint: #7ddacf;
   --linear: linear-gradient(to bottom, #478bf9, #b3c6e6);
+  --transp-white: #ffffff99;
 }
 
 @font-face {
@@ -99,3 +100,46 @@ a {
 }
 
 /* Стили для main.home-page */
+.home-page__context {
+  max-width: 1640px;
+  display: flex;
+  margin: auto;
+  font-family: Lexend-Regular;
+  color: var(--clean_white);
+}
+
+.home-page__partner-invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.home-page__partner-invitation-title {
+  font-size: 9.6rem;
+  line-height: 9.6rem;
+}
+
+.highlight {
+  color: var(--main-blue);
+}
+
+.home-page__partner-invitation-subtitle {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  color: var(--transp-white);
+}
+
+.home-page__partner-invitation-button {
+  display: flex;
+  border-color: var(--main-blue);
+  background-color: var(--main-blue);
+  border-radius: 48px;
+  padding: 20px 72px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-transform: uppercase;
+  color: var(--clean_white);
+}

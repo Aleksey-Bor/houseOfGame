@@ -1,7 +1,9 @@
-function changeLanguage(element) {
-  if (element.textContent === "En") {
-    element.textContent = "Ru";
+function changeLanguage(button) {
+  let language = button.querySelector('.header__button-language');
+  
+  if (language.textContent === 'En') {
+    language.textContent = 'Ru';
   } else {
-    element.textContent = "En";
+    language.textContent = 'En';
   }
 }

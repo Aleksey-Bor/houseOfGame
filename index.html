@@ -20,15 +20,33 @@
       <a class="header__nav-link" href="#">Careers</a>
     </nav>
     <div class="header__buttons">
-      <button class="header__button"><span class="header__button-icon">
+      <button class="header__button"  onclick="changeLanguage(this)"><span class="header__button-icon">
           <img class="header__button-icon-image" src="./assets/icon/planet.png" alt="Language selection - Earth icon">
-        </span><span class="header__button-language" onclick="changeLanguage(this)">En</span>
+        </span><span class="header__button-language">En</span>
       </button>
       <button class="header__button">log in</button>
       <button class="header__button header__button_blue">sign up</button>
     </div>
   </header>
-  <main class="home-page"></main>
+  <main class="home-page">
+    <div class="home-page__context">
+      <section class="home-page__partner-invitation">
+        <h1 class="home-page__partner-invitation-title">HOUSE OF <div class="highlight">GAMBLING</div>
+        </h1>
+        <h2 class="home-page__partner-invitation-subtitle">Raise your ROI with direct advertiser</h2>
+        <div>
+          <button class="home-page__partner-invitation-button">Become a Partner</button>
+        </div>
+      </section>
+      <section class="home-page__casino-chips-animation">
+        animation chips
+      </section>
+      <section class="home-page__blog-posts-container">
+        blog
+      </section>
+    </div>
+  </main>
+
   <footer class="footer"></footer>
 
   <script src="./script.js"></script>
