@@ -74,6 +74,20 @@ a {
   color: var(--clean_white);
 }
 
+.header__button:hover {
+  cursor: pointer;
+  border-color: var(--main-blue);
+}
+
+.header__button_blue {
+  border-color: var(--main-blue);
+  background-color: var(--main-blue);
+}
+
+.header__button_blue:hover {
+  background-color: var(--add-purrple);
+}
+
 .header__button-language {
   margin-left: 8px;
 }
