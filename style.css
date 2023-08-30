@@ -19,9 +19,28 @@
   src: url(./assets/fonts/Lexend/Lexend-Regular.ttf);
 }
 
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   background-color: var(--main-deep_blue);
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
 }
 
 a {
@@ -30,7 +49,7 @@ a {
 
 /* Стили для header */
 .header {
-  max-width: 1640px;
+  width: 1640px;
   display: flex;
   justify-content: space-between;
   margin: 16px auto 0px;
@@ -100,8 +119,9 @@ a {
 }
 
 /* Стили для main.home-page */
-.home-page__context {
-  max-width: 1640px;
+.home-page {
+  width: 1640px;
+  height: 100%;
   display: flex;
   margin: auto;
   font-family: Lexend-Regular;
@@ -109,13 +129,14 @@ a {
 }
 
 .home-page__partner-invitation {
-  display: flex; /* Вернуться к этим стилям когда будет footer */
-  flex-direction: column;  /* Вернуться к этим стилям когда будет footer */
-  justify-content: center;  /* Вернуться к этим стилям когда будет footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 500;
 }
 
 .home-page__partner-invitation-title {
+  margin: 0 0 24px 0;
   font-size: 9.6rem;
   line-height: 9.6rem;
 }
@@ -125,6 +146,7 @@ a {
 }
 
 .home-page__partner-invitation-subtitle {
+  margin: 0 0 48px 0;
   font-size: 3.2rem;
   line-height: 3.2rem;
   color: var(--transp-white);
@@ -149,3 +171,16 @@ a {
   background-color: var(--add-purrple);
   border-color: var(--add-purrple);
 }
+
+/* Стили для footer */
+
+.footer__nav {
+  color: var(--clean_white);
+}
+
+svg {
+  width: 32px;
+  height: 32px
+}
+
+

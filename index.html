@@ -20,7 +20,7 @@
       <a class="header__nav-link" href="#">Careers</a>
     </nav>
     <div class="header__buttons">
-      <button class="header__button"  onclick="changeLanguage(this)"><span class="header__button-icon">
+      <button class="header__button" onclick="changeLanguage(this)"><span class="header__button-icon">
           <img class="header__button-icon-image" src="./assets/icon/planet.png" alt="Language selection - Earth icon">
         </span><span class="header__button-language">En</span>
       </button>
@@ -29,25 +29,72 @@
     </div>
   </header>
   <main class="home-page">
-    <div class="home-page__context">
-      <section class="home-page__partner-invitation">
-        <h1 class="home-page__partner-invitation-title">HOUSE OF <div class="highlight">GAMBLING</div>
-        </h1>
-        <h2 class="home-page__partner-invitation-subtitle">Raise your ROI with direct advertiser</h2>
-        <div>
-          <button class="home-page__partner-invitation-button">Become a Partner</button>
-        </div>
-      </section>
-      <section class="home-page__casino-chips-animation">
-        animation chips
-      </section>
-      <section class="home-page__blog-posts-container">
-        blog
-      </section>
-    </div>
+    <section class="home-page__partner-invitation">
+      <h1 class="home-page__partner-invitation-title">HOUSE OF <div class="highlight">GAMBLING</div>
+      </h1>
+      <h2 class="home-page__partner-invitation-subtitle">Raise your ROI with direct advertiser</h2>
+      <div>
+        <button class="home-page__partner-invitation-button">Become a Partner</button>
+      </div>
+    </section>
+    <section class="home-page__casino-chips-animation">
+      animation chips
+    </section>
+    <section class="home-page__blog-posts-container">
+      blog
+    </section>
   </main>
-
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__nav">
+        <a class="footer__nav-link">Terms & Conditions</a>
+        <a class="footer__nav-link">Cookies</a>
+        <a class="footer__nav-link">Contacts</a>
+        <a class="footer__nav-link">Careers</a>
+        <a class="footer__nav-link">Brand Guide</a>
+      </nav>
+      <nav class="footer__social">
+        <a class="footer__social-link" href="#"><svg fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_9_389)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 13.5C0 20.942 6.05516 27 13.5 27C20.942 27 27 20.942 27 13.5C27 6.05798 20.942 0 13.5 0C6.05799 0 0 6.05798 0 13.5ZM5.01349 4.1929C7.25443 2.14778 10.2341 0.89905 13.5 0.89905C16.765 0.89905 19.7438 2.14702 21.9845 4.19103L20.9825 5.19303C19.0012 3.40726 16.3776 2.32031 13.5 2.32031C10.6214 2.32031 7.99701 3.40801 6.01547 5.19488L5.01349 4.1929ZM4.19133 5.01521C2.14714 7.25594 0.89905 10.2349 0.89905 13.5C0.89905 16.7648 2.14693 19.7435 4.1908 21.9842L5.19278 20.9822C3.40716 19.0009 2.32031 16.3775 2.32031 13.5C2.32031 10.6222 3.40738 7.99854 5.19332 6.01719L4.19133 5.01521ZM5.0129 22.8065C7.25391 24.852 10.2338 26.1009 13.5 26.1009C16.7646 26.1009 19.7431 24.8532 21.9837 22.8096L20.9817 21.8077C19.0005 23.593 16.3773 24.6797 13.5 24.6797C10.6211 24.6797 7.99648 23.5918 6.01487 21.8046L5.0129 22.8065ZM26.101 13.5C26.101 16.7665 24.8518 19.7465 22.8061 21.9876L21.8042 20.9856C23.5916 19.0039 24.6797 16.3792 24.6797 13.5C24.6797 10.6212 23.5919 7.99673 21.8048 6.01515L22.8068 5.01317C24.8521 7.25414 26.101 10.2339 26.101 13.5Z"
+                fill="#478BF9" />
+              <path
+                d="M17.9818 11.4231V11.7389C17.9818 14.9186 15.6588 18.5625 11.4081 18.5625C10.1533 18.5653 8.92506 18.1866 7.875 17.4731C8.05736 17.4988 8.24132 17.5104 8.42534 17.5078C9.46551 17.5108 10.4764 17.1505 11.2956 16.4848C10.8124 16.4774 10.3437 16.312 9.95612 16.0121C9.56857 15.7123 9.28189 15.2932 9.13682 14.8144C9.28077 14.8461 9.42752 14.862 9.57466 14.8618C9.78013 14.8618 9.98467 14.8331 10.1828 14.7765C9.65937 14.6681 9.18849 14.3743 8.85071 13.9451C8.51293 13.516 8.32924 12.9783 8.33108 12.4241V12.3925C8.65131 12.5783 9.01033 12.6802 9.37703 12.6893C8.8889 12.3557 8.54185 11.8412 8.40678 11.2508C8.27172 10.6604 8.35884 10.0387 8.65034 9.51277C9.23116 10.2546 9.95582 10.8613 10.7772 11.2932C11.5986 11.7252 12.4983 11.9728 13.4179 12.0199C13.3724 11.8407 13.3509 11.6558 13.3541 11.4705C13.3369 10.9807 13.4656 10.4974 13.7225 10.0862C13.9794 9.67512 14.352 9.35622 14.7897 9.17295C15.2274 8.98969 15.7089 8.95096 16.1685 9.06206C16.6282 9.17315 17.0437 9.42866 17.3584 9.7938C17.8759 9.68535 18.3722 9.48792 18.827 9.20964C18.6546 9.77528 18.2877 10.2552 17.7963 10.5579C18.2553 10.4923 18.7028 10.3583 19.125 10.1601C18.819 10.6481 18.4319 11.0758 17.9818 11.4231Z"
+                fill="#110A1D" />
+            </g>
+            <defs>
+              <clipPath id="clip0_9_389">
+                <rect width="27" height="27" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a class="footer__social-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none">
+            <g clip-path="url(#clip0_62_402)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 13.5C0 20.942 6.05516 27 13.5 27C20.942 27 27 20.942 27 13.5C27 6.05798 20.942 0 13.5 0C6.05799 0 0 6.05798 0 13.5ZM5.01349 4.1929C7.25443 2.14778 10.2341 0.89905 13.5 0.89905C16.765 0.89905 19.7438 2.14702 21.9845 4.19103L20.9825 5.19303C19.0012 3.40726 16.3776 2.32031 13.5 2.32031C10.6214 2.32031 7.99701 3.40801 6.01547 5.19488L5.01349 4.1929ZM4.19133 5.01521C2.14714 7.25594 0.89905 10.2349 0.89905 13.5C0.89905 16.7648 2.14693 19.7435 4.1908 21.9842L5.19278 20.9822C3.40716 19.0009 2.32031 16.3775 2.32031 13.5C2.32031 10.6222 3.40738 7.99854 5.19332 6.01719L4.19133 5.01521ZM5.0129 22.8065C7.25391 24.852 10.2338 26.1009 13.5 26.1009C16.7646 26.1009 19.7431 24.8532 21.9837 22.8096L20.9817 21.8077C19.0005 23.593 16.3773 24.6797 13.5 24.6797C10.6211 24.6797 7.99648 23.5918 6.01487 21.8046L5.0129 22.8065ZM26.101 13.5C26.101 16.7665 24.8518 19.7465 22.8061 21.9876L21.8042 20.9856C23.5916 19.0039 24.6797 16.3792 24.6797 13.5C24.6797 10.6212 23.5919 7.99673 21.8048 6.01515L22.8068 5.01317C24.8521 7.25414 26.101 10.2339 26.101 13.5Z"
+                fill="#478BF9" />
+              <path
+                d="M15.2493 9.74276H16.3068V7.95401C15.7948 7.90077 15.2803 7.87448 14.7655 7.87526C13.2355 7.87526 12.1893 8.80901 12.1893 10.519V11.9928H10.4624V13.9953H12.1893V19.1253H14.2593V13.9953H15.9805L16.2393 11.9928H14.2593V10.7159C14.2593 10.1253 14.4168 9.74276 15.2493 9.74276Z"
+                fill="#110A1D" />
+            </g>
+            <defs>
+              <clipPath id="clip0_62_402">
+                <rect width="27" height="27" fill="white" />
+              </clipPath>
+            </defs>
+          </svg></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+        <a class="footer__social-link" href="#"></a>
+      </nav>
+    </div>
+  </footer>
 
   <script src="./script.js"></script>
 </body>
