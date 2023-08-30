@@ -60,6 +60,11 @@ a {
 
 .header__nav-link {
   color: var(--clean_white);
+  transition: transform 0.3s ease;
+}
+
+.header__nav-link:hover {
+  transform: scale(1.1);
 }
 
 .header__button {
