@@ -91,6 +91,7 @@ a {
 
 .header__button_blue:hover {
   background-color: var(--add-purrple);
+  border-color: var(--add-purrple);
 }
 
 .header__button-language {
