@@ -109,9 +109,9 @@ a {
 }
 
 .home-page__partner-invitation {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /* Вернуться к этим стилям когда будет footer */
+  flex-direction: column;  /* Вернуться к этим стилям когда будет footer */
+  justify-content: center;  /* Вернуться к этим стилям когда будет footer */
   font-weight: 500;
 }
 
@@ -142,4 +142,10 @@ a {
   line-height: 3.2rem;
   text-transform: uppercase;
   color: var(--clean_white);
+}
+
+.home-page__partner-invitation-button:hover {
+  cursor: pointer;
+  background-color: var(--add-purrple);
+  border-color: var(--add-purrple);
 }
