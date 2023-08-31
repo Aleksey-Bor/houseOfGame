@@ -173,14 +173,48 @@ a {
 }
 
 /* Стили для footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 4px solid var(--main-blue);
+  border-left: 4px solid var(--main-blue);
+  border-right: 4px solid var(--main-blue);
+  border-radius: 64px 64px 0px 0px;
+  padding: 40px 140px 24px 140px;
+}
 
 .footer__nav {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
   color: var(--clean_white);
 }
 
-svg {
-  width: 32px;
-  height: 32px
+.footer__nav-link {
+  font-family: Lexend-Regular;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.footer__nav-link:hover {
+  transform: scale(1.1);
+}
 
+.footer__nav-link_highlight {
+  color: var(--main-blue);
+}
+
+.footer__social {
+  width: 312px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-link svg {
+  width: 32px;
+  height: 32px;
+}
