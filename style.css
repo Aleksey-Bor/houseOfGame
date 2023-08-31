@@ -188,7 +188,6 @@ a {
   width: 600px;
   display: flex;
   justify-content: space-between;
-  color: var(--clean_white);
 }
 
 .footer__nav-link {
@@ -198,6 +197,7 @@ a {
   line-height: 2rem;
   cursor: pointer;
   transition: transform 0.3s ease;
+  color: var(--clean_white);
 }
 
 .footer__nav-link:hover {
