@@ -1,11 +1,15 @@
-#svg-container1 {
-  width: 100px; /* Установите необходимую ширину */
-  height: 100%; /* Установите необходимую высоту */
-  position: relative; /* Позиционирование относительно родительского элемента */
-  overflow: hidden; /* Скрытие изображений, выходящих за границы контейнера */
-  /* border: red solid 2px; */
+.home-page__casino-chips-animation {
+  display: flex;
 }
 
- #svg-container1 img {
+#svg-container1, #svg-container2, #svg-container3 {
+  width: 100px; 
+  height: 100%; 
+  position: relative;
+  overflow: hidden; 
+}
+
+#svg-container1 img {
   /* position: absolute; */
+  /* border: red solid 2px; */
 } 

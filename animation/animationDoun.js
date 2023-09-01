@@ -4,11 +4,11 @@ let imageSources = [
   "/animation/assets/shield.svg",
   "/animation/assets/dollar.svg",
   "/animation/assets/soccer.svg",
-  "/animation/assets/m.svg",
-  "/animation/assets/shield.svg",
-  "/animation/assets/dollar.svg",
-  "/animation/assets/soccer.svg",
-  "/animation/assets/m.svg",
+  "/animation/assets/m.svg",  
+  "/animation/assets/crown.svg",  
+  "/animation/assets/crown2.svg",  
+  "/animation/assets/timer.svg",  
+  "/animation/assets/world.svg",  
 ];
 
 let images = [];
