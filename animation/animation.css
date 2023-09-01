@@ -3,9 +3,9 @@
   height: 100%; /* Установите необходимую высоту */
   position: relative; /* Позиционирование относительно родительского элемента */
   overflow: hidden; /* Скрытие изображений, выходящих за границы контейнера */
-  border: red solid 2px;
+  /* border: red solid 2px; */
 }
 
  #svg-container1 img {
-  position: absolute;
+  /* position: absolute; */
 } 
