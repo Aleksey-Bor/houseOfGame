@@ -2,14 +2,15 @@
   display: flex;
 }
 
-#svg-container1, #svg-container2, #svg-container3 {
-  width: 100px; 
-  height: 100%; 
+#svg-container1,
+#svg-container2,
+#svg-container3 {
+  width: 100px;
+  height: 100%;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-#svg-container1 img {
-  /* position: absolute; */
-  /* border: red solid 2px; */
-} 
+.svg-container1 img {
+  margin: -2px;
+}
