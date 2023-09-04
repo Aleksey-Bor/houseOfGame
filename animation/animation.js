@@ -30,6 +30,7 @@ function fillContainer(container, images) {
     const img = document.createElement("img");
     img.src = imageSrc;
     container.appendChild(img);
+
     img.addEventListener("load", () => {
       checkArr.push(img);
       if (checkArr.length == images.length) {
@@ -69,7 +70,7 @@ function setStartPosition() {
 }
 
 //Двигаем изображения
-function animateImages(/* startPosition,*/ images1, images2, images3) {
+function animateImages(images1, images2, images3) {
   let startPos1 = [];
   let startPos2 = [];
   let startPos3 = [];
@@ -96,6 +97,9 @@ function animateImages(/* startPosition,*/ images1, images2, images3) {
       const image = images1[i];
       image.style.top = `${startPos1[i]}px`;
       startPos1[i] += 5;
+
+      image.style.filter = `brightness(${0.5 - startPos1[i] / fragmentHeight})`;
+
       if (
         startPos1[i] >
         fragmentHeight - (shiftPositions - paddingAdjustment)
@@ -108,6 +112,9 @@ function animateImages(/* startPosition,*/ images1, images2, images3) {
       const image = images2[i];
       image.style.bottom = `${startPos2[i]}px`;
       startPos2[i] += 4;
+
+      image.style.filter = `brightness(${0.5 + startPos2[i] / fragmentHeight})`;
+
       if (
         startPos2[i] >
         fragmentHeight - (shiftPositions - paddingAdjustment)
@@ -120,6 +127,10 @@ function animateImages(/* startPosition,*/ images1, images2, images3) {
       const image = images3[i];
       image.style.top = `${startPos3[i]}px`;
       startPos3[i] += 6;
+
+      // image.style.filter = "brightness(0.7)";
+      image.style.filter = `brightness(${0.7 - startPos3[i] / fragmentHeight})`;
+
       if (
         startPos3[i] >
         fragmentHeight - (shiftPositions - paddingAdjustment)

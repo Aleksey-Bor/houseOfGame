@@ -123,6 +123,7 @@ a {
   width: 1640px;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   margin: auto;
   font-family: Lexend-Regular;
   color: var(--clean_white);
