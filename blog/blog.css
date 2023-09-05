@@ -1,0 +1,57 @@
+@import "../var.css";
+@import url("../fonts.css");
+
+.home-page__blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lexend-Regular;
+  color: var(--clean-white);
+}
+
+.blog {
+  width: 531px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__header {
+  margin: 0 0 24px 0;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+.blog__posts-wrapper {
+  height: 595px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid var(--main-blue);
+  border-radius: 100px;
+  background-color: var(--transp-gray);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+
+.blog__post {
+  margin-bottom: 16px;
+  padding: 16px 64px;
+  border-radius: 196px;
+  background-color: var(--main-deep-blue);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+}
+
+.blog__post:first-child {
+  background-color: var(--main-blue);
+}
+
+.blog__post-text {
+  margin-bottom: 14px;
+}

@@ -1,22 +1,9 @@
+@import "var.css";
+@import url("fonts.css");
+
 /* Общие стили */
 * {
   box-sizing: border-box;
-}
-
-:root {
-  font-size: 10px;
-  --main-deep_blue: #110a1d;
-  --main-blue: #478bf9;
-  --clean_white: #ffffff;
-  --add-purrple: #9dadf2;
-  --add-fresh_mint: #7ddacf;
-  --linear: linear-gradient(to bottom, #478bf9, #b3c6e6);
-  --transp-white: #ffffff99;
-}
-
-@font-face {
-  font-family: Lexend-Regular;
-  src: url(./assets/fonts/Lexend/Lexend-Regular.ttf);
 }
 
 html,
@@ -28,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0px;
-  background-color: var(--main-deep_blue);
+  background-color: var(--main-deep);
 }
 
 header {
@@ -79,7 +66,7 @@ a {
 }
 
 .header__nav-link {
-  color: var(--clean_white);
+  color: var(--clean-white);
   transition: transform 0.3s ease;
 }
 
@@ -93,10 +80,10 @@ a {
   align-items: center;
   border: 2px solid var(--add-purrple);
   border-radius: 24px;
-  background-color: var(--main-deep_blue);
+  background-color: var(--main-deep);
   padding: 14px;
   text-transform: uppercase;
-  color: var(--clean_white);
+  color: var(--clean-white);
 }
 
 .header__button:hover {
@@ -126,7 +113,7 @@ a {
   justify-content: space-between;
   margin: auto;
   font-family: Lexend-Regular;
-  color: var(--clean_white);
+  color: var(--clean-white);
 }
 
 .home-page__partner-invitation {
@@ -164,7 +151,7 @@ a {
   font-size: 2.4rem;
   line-height: 3.2rem;
   text-transform: uppercase;
-  color: var(--clean_white);
+  color: var(--clean-white);
 }
 
 .home-page__partner-invitation-button:hover {
@@ -198,7 +185,7 @@ a {
   line-height: 2rem;
   cursor: pointer;
   transition: transform 0.3s ease;
-  color: var(--clean_white);
+  color: var(--clean-white);
 }
 
 .footer__nav-link:hover {

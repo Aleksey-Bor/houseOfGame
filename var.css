@@ -1,0 +1,12 @@
+:root {
+  font-size: 10px;
+  --main-deep: #110a1d;
+  --main-deep-blue: #1E1231;
+  --main-blue: #478bf9;
+  --clean-white: #ffffff;
+  --add-purrple: #9dadf2;
+  --add-fresh_mint: #7ddacf;
+  --linear: linear-gradient(to bottom, #478bf9, #b3c6e6);
+  --transp-white: #ffffff99;
+  --transp-gray: #ffffff1f;
+}
