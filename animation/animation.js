@@ -14,6 +14,13 @@ let imageSources = [
   "/animation/assets/crown.svg",
   "/animation/assets/timer.svg",
   "/animation/assets/world.svg",
+  "/animation/assets/shield.svg",
+  "/animation/assets/dollar.svg",
+  "/animation/assets/soccer.svg",
+  "/animation/assets/m.svg",
+  "/animation/assets/crown.svg",
+  "/animation/assets/timer.svg",
+  "/animation/assets/world.svg",
 ];
 
 //Находим контейнеры для изображений
@@ -21,7 +28,7 @@ const container1 = document.getElementById("svg-container1");
 const container2 = document.getElementById("svg-container2");
 const container3 = document.getElementById("svg-container3");
 const shiftPositions = 400;
-const paddingAdjustment = 33;
+const paddingAdjustment = 45;
 
 //Заполняем контейнеры изображениями
 function fillContainer(container, images) {
