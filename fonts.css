@@ -2,3 +2,8 @@
   font-family: Lexend-Regular;
   src: url(./assets/fonts/Lexend/Lexend-Regular.ttf);
 }
+
+@font-face {
+  font-family: FuturaPT;
+  src: url(./assets/fonts/FuturaPT/FuturaPT-Medium.ttf);
+}
