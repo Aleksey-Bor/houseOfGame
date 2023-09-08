@@ -41,9 +41,8 @@
   overflow-y: auto;
 }
 
-
 .blog__post {
-  margin: 8px 24px;
+  margin: 8px 40px 8px 24px;
   padding: 16px 64px;
   border-radius: 196px;
   background-color: var(--main-deep-blue);
@@ -78,7 +77,6 @@
   color: var(--transp-white);
 }
 
-
 /* Добавляем стили контейнерам пришедшим из библиотеки SimpleBar  */
 .simplebar-placeholder {
   height: 595px;
@@ -87,8 +85,14 @@
 
 .simplebar-vertical {
   height: 403px;
-  width: 8px;
   margin-top: 80px;
-  align-items: center;
   background-color: var(--transp-gray);
 }
+
+.simplebar-vertical {
+  margin-right: 16px;
+}
+
+
+
+

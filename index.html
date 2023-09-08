@@ -9,7 +9,14 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./animation/animation.css">
   <link rel="stylesheet" href="./blog/blog.css">
-
+  <!-- Код чтобы работал скролл-бар в блоге, если JS в браузере пользователя отключен -->
+  <noscript> 
+    <style>
+      [data-simplebar] {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
