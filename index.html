@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./animation/animation.css">
   <link rel="stylesheet" href="./blog/blog.css">
   <!-- Код чтобы работал скролл-бар в блоге, если JS в браузере пользователя отключен -->
-  <noscript> 
+  <noscript>
     <style>
       [data-simplebar] {
         overflow: auto;
@@ -31,12 +31,45 @@
       <a class="header__nav-link" href="#">Careers</a>
     </nav>
     <div class="header__buttons">
-      <button class="header__button"><span class="header__button-icon">
+      <button class="header__button">
+        <span class="header__button-icon">
           <img class="header__button-icon-image" src="./assets/icon/planet.png" alt="Language selection - Earth icon">
-        </span><span class="header__button-language">En</span>
+        </span>
+        <span class="header__button-language">En</span>
       </button>
       <button class="header__button">log in</button>
       <button class="header__button header__button_blue">sign up</button>
+    </div>
+  </header>
+
+  <!-- Элементы для мобильной верстки -->
+  <header class="header_mobile">
+    <div class="header__insert_mobile">
+      <div class="header__cap_mobile">
+        <div class="header__logo_mobile"></div>
+        <div class="header__buttons_mobile">
+          <button class="header__button_mobile">
+            <img class="header__button-icon-image" src="./assets/icon/planet.png" alt="Language selection - Earth icon">
+          </button>
+          <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+      <nav class="header__nav_mobile">
+        <a class="header__nav-link_mobile" href="#">About us</a>
+        <a class="header__nav-link_mobile" href="#">Brands</a>
+        <a class="header__nav-link_mobile" href="#">Commissions</a>
+        <a class="header__nav-link_mobile" href="#">News</a>
+        <a class="header__nav-link_mobile" href="#">Contact us</a>
+        <a class="header__nav-link_mobile" href="#">Careers</a>
+        <div class="header__authorization">
+          <button class="header__authorization-button">log in</button>
+          <button class="header__authorization-button header__authorization-button_blue">sign up</button>
+        </div>
+      </nav>
     </div>
   </header>
 

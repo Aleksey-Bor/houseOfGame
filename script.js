@@ -41,3 +41,19 @@ const languageChanger = new LanguageChanger(button);
 
 const links = document.querySelectorAll(".footer__social-link");
 const linkHoverEffect = new LinkHoverEffect(links);
+
+class BurgerMenu {
+  constructor(selector1, selector2) {
+    this.burger = document.querySelector(selector1);
+    this.burger.addEventListener("click", this.toggleMenu.bind(this));
+    this.menu = document.querySelector(selector2);
+    this.menu.addEventListener("click", this.toggleMenu.bind(this));
+  }
+
+  toggleMenu() {
+    this.burger.classList.toggle("open");
+    this.menu.classList.toggle("open");
+  }
+}
+
+const burgerMenu = new BurgerMenu(".header__burger", ".header__nav_mobile");

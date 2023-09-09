@@ -206,3 +206,164 @@ a {
   width: 32px;
   height: 32px;
 }
+
+/* Стили для мобильного меню в header */
+.header_mobile {
+  display: none;
+}
+
+
+
+.header__insert_mobile {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--main-deep);
+}
+
+.header__cap_mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 2px solid var(--main-blue);
+  border-radius: 64px;
+  padding: 14px 10px;
+}
+
+.header__logo_mobile {
+  width: 54px;
+}
+
+.header__buttons_mobile {
+  width: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__button_mobile {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--add-purrple);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__button_mobile:active {
+  border-color: var(--main-blue);
+}
+
+.header__burger {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__burger span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--clean-white);
+  transition: transform 0.3s ease;
+}
+
+.header__burger.open span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.header__burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.open span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.header__nav_mobile {
+  display: none;
+}
+
+.header__nav_mobile.open {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.header__nav-link_mobile,
+.header__authorization-button {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid var(--main-blue);
+  border-radius: 64px;
+  padding: 24px 48px;
+  font-family: Lexend-Regular;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--clean-white);
+}
+
+.header__nav-link_mobile:active {
+  border-color: var(--add-purrple);
+}
+
+.header__authorization {
+  margin-top: 30px;
+}
+
+.header__authorization-button {
+  background-color: var(--main-deep);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.header__authorization-button:active {
+  border-color: var(--add-purrple);
+}
+
+.header__authorization-button_blue {
+  background-color: var(--main-blue);
+}
+
+.header__authorization-button_blue:active {
+  background-color: var(--add-purrple);
+}
+
+@media (max-width: 1640px) {
+  .header {
+    width: 97%;
+  }
+}
+
+@media (max-width: 1124px) {
+  /* Тут можно заменить логотип на мобильную верчию, если будет */
+  .header__logo {
+    width: 54px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+
+  .header_mobile {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: var(--main-deep);
+  }
+}
