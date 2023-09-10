@@ -212,8 +212,6 @@ a {
   display: none;
 }
 
-
-
 .header__insert_mobile {
   width: 100%;
   padding: 10px;
@@ -363,7 +361,6 @@ a {
   .header_mobile {
     display: block;
     width: 100%;
-    position: relative;
     background-color: var(--main-deep);
   }
 }
