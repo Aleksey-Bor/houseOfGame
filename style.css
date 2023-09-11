@@ -144,6 +144,10 @@ a {
   border-color: var(--add-purrple);
 }
 
+.home-page__casino-chips-animation {
+  padding-left: 40px;
+}
+
 /* Стили для footer */
 .footer {
   display: flex;
@@ -317,6 +321,7 @@ body {
   font-weight: 400;
   line-height: 2rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header__authorization-button:active {
