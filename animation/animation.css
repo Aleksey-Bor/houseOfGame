@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.home-page__casino-chips-animation div > img {
+  width: 99px;
+}
+
 #svg-container1,
 #svg-container2,
 #svg-container3 {

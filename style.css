@@ -145,7 +145,7 @@ a {
 }
 
 .home-page__casino-chips-animation {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 /* Стили для footer */
@@ -337,8 +337,96 @@ body {
 }
 
 @media (max-width: 1640px) {
-  .header {
+  .header,
+  .home-page {
     width: 97%;
+  }
+
+  .home__page {
+    justify-content: space-around;
+  }
+
+/*   .home-page__partner-invitation-title {
+    font-size: 3.91rem;
+    line-height: 4.25rem;
+  }
+
+  .home-page__partner-invitation-subtitle {
+    font-size: 1.7rem;
+    line-height: 2.21rem;
+  }
+
+  .home-page__partner-invitation-button {
+    font-size: 1.53rem;
+    line-height: normal;
+  } */
+
+  .home-page__casino-chips-animation {
+    padding-left: 0;
+  }
+
+  .blog {
+    width: 450px;
+  }
+
+  .simplebar-content {
+    width: 450px;
+  }
+
+ /*  .blog__header {
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+  }
+
+  .blog__post {
+    font-size: 2.04rem;
+    font-weight: 400;
+    line-height: 2.38rem;
+  } */
+}
+
+@media (max-width: 1490px) {
+  .home-page__partner-invitation-title {
+    margin: 0 0 24px 0;
+    font-size: 4.6rem;
+    line-height: 5rem;
+  }
+
+  .home-page__partner-invitation-subtitle {
+    margin: 0 0 48px 0;
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+
+  .home-page__partner-invitation-button {
+    font-size: 1.8rem;
+    line-height: normal;
+  }
+
+  .blog {
+    width: 350px;
+  }
+
+  .simplebar-content {
+    width: 350px;
+    height: 421px;
+  }
+
+  .blog__header {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4rem;
+  }
+
+  .blog__post {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .simplebar-vertical {
+    margin-right: 6px;
   }
 }
 

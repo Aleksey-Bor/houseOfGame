@@ -28,7 +28,7 @@ const container1 = document.getElementById("svg-container1");
 const container2 = document.getElementById("svg-container2");
 const container3 = document.getElementById("svg-container3");
 const shiftPositions = 400;
-const paddingAdjustment = 45;
+const paddingAdjustment = 55;
 
 //Заполняем контейнеры изображениями
 function fillContainer(container, images) {
